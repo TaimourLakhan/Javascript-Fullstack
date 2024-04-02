@@ -140,7 +140,7 @@ if(numbe1[numbe1.length-1]==numbe2[numbe2.length-1]){
 // question 4
 
 
-let a=10;
+let aa=10;
 let b=20;
 let c=30;
 
