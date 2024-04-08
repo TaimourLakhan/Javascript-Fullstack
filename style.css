@@ -1,0 +1,116 @@
+/* gernal styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling  */
+
+/* header styling nav  */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+header{
+    width: 100%;
+    height: 15%;
+    background-color: #232323;
+    padding: 1rem;
+
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.7rem;
+    opacity: 0.8;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* main content styling  */
+
+main{
+    width: 100%;
+    height: 70%;
+    display: flex;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+
+form div{
+    margin-top: 1.5rem;
+}
+
+.cardmain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.card{
+    width: 200px;
+    height: 190px;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 10px;
+    border: 2px solid #121212;
+    
+}
+
+.card img{
+    border-radius:10px 10px 0 0 ;
+    width: 100%;
+    height: 70%;
+}
+
+
+/* footer styling  */
+
+footer{
+    width: 100%;
+    height: 15%;
+    background-color: #232323;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnstyle{
+    color: white;
+    background-color: black;
+}
+
+

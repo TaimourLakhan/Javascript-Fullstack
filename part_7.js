@@ -142,23 +142,25 @@ let no = prompt("give the no");
 
 let Even = (no) => {
 
-    if (no == 0) {
-        console.log("its zero exit now");
 
-        if (no % 2 == 0) {
-            console.log("no is even");
-        } else if (no == 0) {
-            console.log("it is zero pass other no");
 
-        } else if (no % 2 != 0) {
-            console.log("it is odd no though");
-        } else {
-            console.log("okay you can go now");
-        }
+    if (no % 2 == 0) {
+        console.log("no is even");
+    } else if (no == 0) {
+        console.log("it is zero pass other no");
+
+    } else if (no % 2 != 0) {
+        console.log("it is odd no though");
+    } else {
+        console.log("okay you can go now");
     }
+
 }
 
 Even(no);
+
+
+
 
 
 
