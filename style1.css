@@ -1,0 +1,42 @@
+/* styling of the div  */
+
+body{
+    text-align: center;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 1.5rem;
+    border: 6px solid black;
+    border-radius: 35px;
+
+}
+
+/* color to the buttons  */
+
+.red{
+    background-color: #d95980;
+}
+.yellow{
+    background-color:#f99b45;
+}
+.green{
+    background-color: rgb(68, 128, 68);
+}
+.purple{
+    background-color:rgb(99, 48, 99);
+}
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: blue;
+}
