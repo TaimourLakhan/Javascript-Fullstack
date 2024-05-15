@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api taimour</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js" integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <h1>Hey Taimour! Get random cat facts:</h1>
+    <button >show facts</button>
+    <button class="btn">show dog image</button>
+    <p id="para"></p>
+    <img >
+    <script>
+        // axious is the library from where we make http request inside it it also use fetch method to send requwst but it is the shortcut and compact version to use it 
+
+        let btn=document.querySelector("button");
+        let para=document.querySelector("#para");
+        let btn2=document.querySelector(".btn");
+        let img=document.querySelector("img");
+
+        btn.addEventListener("click",async ()=>{
+
+
+            try{
+                let config={headers:{Accept: "application/json"}};
+                let res=await axios.get(url,config);
+                para.innerText=res.data.fact;
+            console.log(res);
+            } catch(err){
+                console.log(err);
+            }
+
+            
+
+        })
+
+        let url="https://catfact.ninja/fact";
+
+
+        // now acessing dog api 
+
+        let url1="https://dog.ceo/api/breeds/image/random";
+
+        btn2.addEventListener("dblclick",async ()=>{
+
+            
+            try{
+                let res= await axios.get(url1);
+                let link=res.data.message;
+                console.log(link);
+                img.setAttribute("src",link);
+            }catch(err){
+                console.log(err);
+            }
+            
+        })
+
+        // we can pass header like that 
+
+
+
+        // async function getFacts(){
+            
+        // }
+
+
+    </script>
+</body>
+</html>

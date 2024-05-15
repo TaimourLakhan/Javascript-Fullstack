@@ -29,7 +29,7 @@ function saveNotes(){
 
 // calling add note function 
 
-function addNote(text=""){
+function addNote(text = ""){
     let note=document.createElement("div");
     note.classList.add('note');
     
